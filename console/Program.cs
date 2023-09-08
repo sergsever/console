@@ -11,7 +11,7 @@ internal class Program
 		DataContext dbcontext = new DataContext();
 		dbcontext.Init();
 		ItemDao dao = new ItemDao(dbcontext);
-		dao.Add(new Item() { Id = 1, Name = "Item1" });
+		dao.Add(new Item() { Name = "Item1" });
 		Console.WriteLine(dao.GetFirst().ToString());
 	}
 }
